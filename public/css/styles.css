@@ -1,0 +1,470 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Шапка */
+header {
+  background-color: #42e0d9;
+  padding: 1rem;
+}
+
+/* Верхняя часть хедера */
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo a img {
+  height: 120px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo p {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contact-info {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Ссылки ниже шапки */
+.sub-header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Стили ссылок */
+.btn-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.contacto-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  height: 600px; /* или по вкусу */
+}
+
+/* Общие стили карточек */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Визуальные стили для изображений */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  z-index: 2;
+}
+
+.card-text {
+  position: relative;
+  z-index: 3;
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Тень для текста */
+}
+
+.card-text h2,
+.card-text p,
+.card-text a {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Ссылка выровнена влево */
+.card-text a {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card-text a {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0077cc; /* Синий цвет для ссылок */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавное изменение */
+}
+
+.card-text a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Разметка карточек в grid */
+.card-vertical {
+  grid-row: span 2; /* тянется на две строки */
+}
+
+.card-horizontal .card-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-horizontal img,
+.card-vertical img {
+  height: 100%;
+}
+
+
+
+
+/* Кнопка "Contáctanos" */
+.btn-contact {
+  background-color: #42e0d9;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-contact:hover {
+  background-color: #36c2c1;
+}
+
+
+
+/* Контактная форма */
+.contacto-container {
+  display: flex;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+}
+
+.contacto-sidebar {
+  width: 200px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contacto-icono {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contacto-formulario {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 30px;
+  
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #a7f0e2; /* светло-мятовая тонкая рамка */
+  
+}
+
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.form-card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-enviar {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.btn-enviar {
+  background-color: #39d7c4;
+  color: white;
+}
+
+
+/* Футер */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Демонстрационная надпись */
+.demo-warning {
+  background-color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.demo-warning small {
+  color: red;
+  font-size: 12px;
+}
+
+/* Верхняя часть хедера */
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Логотип и название */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* УБРАТЬ ПОСЛЕ ПОДКЛЮЧЕНИЯ К БД */
+
+
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo-area, .contact-info, .menu-demo {
+  flex: 1;
+}
+
+/* Центрируем кнопки */
+.menu-demo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Остальные стили остаются прежними */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.menu-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #333;
+}
+
+/* reseñas */
+
+.reviews-list-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.reviews-list-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.review-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.review-title {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #2980b9;
+}
+
+.review-rating {
+  font-size: 1.2rem;
+  color: #f39c12; /* Золотистый цвет звезд */
+  user-select: none;
+}
+
+.review-vet-name {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.review-comment {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.review-photo img {
+  max-width: 100%;
+  border-radius: 6px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Адаптивность */
+
+
+
+
+
+/* Relativo (hasta 768px) */
+@media (max-width: 768px) {
+  .logo {
+    display: none; /* Скрыть логотип */
+  }
+
+  .reviews-list-container {
+    padding: 0 0.5rem;
+  }
+
+  /* ----- ELIMINAR DESPUES DE CONNTCTAR A LA BD */
+
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu-demo {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+
+
+

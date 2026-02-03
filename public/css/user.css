@@ -1,0 +1,1074 @@
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.user-header-left {
+  flex: 0 0 auto;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.user-header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.user-header-center h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.user-header-right {
+  flex: 0 0 auto;
+}
+
+.logout {
+  flex: 0 0 auto;
+  background: transparent;
+  color: #0077cc;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  border: none;
+  cursor: pointer; 
+}
+
+/* --- user dashboard --- */
+.user-dashboard {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Сетка карточек */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Карточка */
+.user-dashboard .card {
+  display: block;
+  background-color: #42e0d9;
+  border: 1px solid #3ed5c2;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #5c4d73;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(224, 177, 208, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(224, 177, 208, 0.2);
+  background-color: #fdf6fa;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.user-dashboard .card::before,
+.user-dashboard .card img {
+  display: none !important;
+}
+
+.user-dashboard .card {
+  color: #0c2b30 !important;
+  text-shadow: none !important;
+  position: static !important;
+}
+
+/* ----- user-perfil ------*/
+
+.user-perfil.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.user-wrapper {
+  border: 1px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Центрируем содержимое */
+.user-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Заголовок */
+.user-content h2 {
+  text-align: center;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Метки */
+#perfil-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+/* Поля ввода */
+#perfil-form input,
+#perfil-form select,
+#perfil-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #3ed5c2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Кнопки в строку */
+.botones-contenedor {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+
+}
+
+/* Кнопка "Guardar cambios" */
+.boton-formulario {
+  background-color: #3ed5c2;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: auto;
+}
+
+.boton-formulario:hover {
+  background-color: #3ed5c2;
+}
+
+/* Кнопка "Eliminar cuenta" */
+.btn-formulario {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: center;
+}
+
+.btn-formulario:hover {
+  background-color: #c0392b;
+}
+
+
+
+/* Отдельный блок таблицы */
+.mascotas-registrados  {
+  border: 1px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+}
+
+.mascotas-registrados h2 {
+  margin-top: 0;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+}
+
+/* Таблица */
+
+
+.tabla-mascotas table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-mascotas th,
+.tabla-mascotas td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #3ed5c2;
+}
+
+.tabla-mascotas th {
+  background-color: #42e0d9;
+  color: #4c2a3c;
+}
+
+/* Центрируем весь текст в заголовочной ячейке */
+
+
+th:nth-child(6) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Подпись под основным текстом */
+.sub-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #666;
+  margin-top: 2px;
+}
+
+.sin-otro-dueno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem; /* или auto, если хочешь адаптивность */
+  font-size: 1.25rem;
+  color: #999;
+  font-weight: bold;
+}
+
+
+/* Подпись под основным текстом */
+.sub-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #666;
+  margin-top: 2px;
+}
+
+
+/* Общий стиль кнопок действий */
+.btn-action {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-action:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  background-color: #f0f0f0;
+}
+
+/* Стиль для кнопки удаления */
+.btn-delete {
+  background-color: #ffe5e5;
+}
+
+.btn-delete:hover {
+  background-color: #ff6347;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+
+/* -------- Mis Mascotas -------- */
+.lista-mascotas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mascota-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #42e0d9;
+  background-color: #e6fafa;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(66, 224, 217, 0.1);
+}
+
+.nombre-mascota {
+  flex: 0 0 140px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0c2b30;
+  text-align: left;
+}
+
+.mascota-info {
+  flex-grow: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+}
+
+.mascota-info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.btn-historial {
+  flex: 0 0 auto;
+  font-size: 1.6rem;
+  color: #42e0d9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.btn-historial:hover {
+  color: #2bc0bc;
+}
+
+/* ------ historial --------*/
+.historial-lista {
+  border: 1px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+  margin-top: 2rem;
+}
+
+.historial-lista h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #4c2a3c;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Стилизация таблицы */
+.historial-lista table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.historial-lista th,
+.historial-lista td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #3ed5c2;
+}
+
+.historial-lista th {
+  background-color: #42e0d9;
+  color: #fff;
+  font-weight: bold;
+}
+
+.historial-lista td {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ------------ Facturas ----------*/
+
+/* === Facturación === */
+
+.total-deuda {
+  text-align: center;
+  background-color: #e0faf8;
+  border: 2px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #4c2a3c;
+  font-weight: bold;
+}
+
+.total-deuda span {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* Contenedor general */
+.facturas-lista {
+  border: 1px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+  margin-top: 1rem;
+}
+
+.facturas-lista h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #4c2a3c;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Таблица */
+.facturas-lista table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.facturas-lista th,
+.facturas-lista td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #3ed5c2;
+}
+
+.facturas-lista th {
+  background-color: #42e0d9;
+  color: #fff;
+  font-weight: bold;
+}
+
+.facturas-lista td {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Стили статуса */
+.estado {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.estado.pagado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.estado.pendiente {
+  background-color: #ffe5e5;
+  color: #a94442;
+}
+
+/* Ссылки на документы */
+.facturas-lista a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Кнопка "Pagar ahora" */
+.btn-pagar {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #42e0d9;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pagar:hover {
+  background-color: #2fc5c0;
+}
+
+/* ---------- Turno ---------*/
+
+.user-perfil select {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #3ed5c2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.solicitar-turno-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* опционально — отступы между блоками */
+}
+#perfil-form fieldset {
+  border: 2px solid #3ed5c2; /* рамка цвета, который у тебя используется */
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9fdfd; /* можно легкий фон, если нужно */
+}
+
+#perfil-form legend {
+  font-weight: 600;
+  color: #4c2a3c;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+.disponibilidad-turnos,
+.mis-turnos {
+  border: 1px solid #3ed5c2;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  background-color: #f0fafa;
+  box-shadow: 0 2px 8px rgba(62, 213, 194, 0.15);
+  margin-top: 2rem;
+}
+
+.disponibilidad-turnos h3,
+.mis-turnos h3 {
+  color: #4c2a3c;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.disponibilidad-turnos .info-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.lista-turnos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.turno-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6fafa;
+  border-left: 6px solid #42e0d9;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(66, 224, 217, 0.1);
+  font-size: 1rem;
+  color: #0c2b30;
+}
+
+.veterinario-nombre {
+  font-weight: bold;
+}
+
+.turno-item time {
+  font-style: normal;
+  color: #333;
+  margin-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.btn-reservar,
+.btn-cancelar {
+  background-color: #42e0d9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reservar:hover,
+.btn-cancelar:hover {
+  background-color: #2fc5c0;
+}
+
+/* ---------Reseñas ---------*/
+.lista-reviews .mascota-item {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formulario-review input[type="text"],
+.formulario-review textarea,
+.formulario-review select,
+.formulario-review input[type="file"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #3ed5c2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formulario-review input:focus,
+.formulario-review textarea:focus,
+.formulario-review select:focus {
+  outline: none;
+  border-color: #2fc5c0;
+  box-shadow: 0 0 0 2px rgba(47, 197, 192, 0.2);
+}
+
+  .form-element {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  textarea {
+    min-height: 100px;
+    resize: vertical; /* или none, если не хочешь, чтобы пользователи изменяли размер */
+  }
+  .form-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contenedor-boton-centro {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem; /* можно подстроить под нужный отступ */
+}
+
+
+  /* Стили для блока отзывов, уникальные классы */
+.reviews-section {
+  width: 100%;
+  max-width: none; /* чтобы не ограничивать ширину */
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: #fff; /* белый фон */
+  border: 1px solid #3ed5c2; /* рамка вокруг всей секции */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.reseña-registrada {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+}
+
+.contenido-reseña {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-reseña {
+  flex: 1;
+  padding-right: 1rem;
+  color: #444;
+}
+
+.acciones-reseña {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+
+
+  
+.reseña-registrada {
+  border-left: 6px solid #3ed5c2;
+  background: linear-gradient(to right, #f9fdfd, #e8fbf9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(66, 224, 217, 0.12);
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.reseña-registrada:hover {
+  box-shadow: 0 6px 12px rgba(66, 224, 217, 0.2);
+}
+
+.contenido-reseña {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.texto-reseña {
+  flex: 1;
+  min-width: 250px;
+  color: #333;
+}
+
+.texto-reseña h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  color: #4c2a3c;
+}
+
+.texto-reseña p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+
+.modo-registro {
+  margin: 40px 0;
+}
+
+.modo-registro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.modo-registro-botones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* выравнивание по левому краю */
+  flex-wrap: wrap; /* чтобы не ломалось на узких экранах */
+}
+
+
+
+.btn-link {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #42e0d9; /* розовая рамка */
+  color: #4c2a3c;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* не переносить текст */
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #42e0d9;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+/* ---------- Планшеты ---------- */
+@media (max-width: 1023px) {
+
+
+  .user-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .user-header-center {
+    text-align: left;
+    width: 100%;
+  }
+
+
+  .user-wrapper {
+    padding: 1.5rem;
+  }
+
+  #perfil-form input,
+  #perfil-form button,
+  .btn-formulario {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .botones-contenedor {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tabla-mascotas table,
+  .tabla-mascotas th,
+  .tabla-mascotas td {
+    font-size: 0.9rem;
+  }
+  .acciones-reseñas-botones {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contenido-reseña {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .acciones-reseña {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .boton-formulario {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .formulario-review input,
+  .formulario-review textarea,
+  .formulario-review select {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/* ---------- Мобильные устройства ---------- */
+@media (max-width: 767px) {
+
+  .user-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user-header-center {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.logout {
+  width: 100%;
+  text-align: center;
+}
+
+
+.top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    display: none; /* Скрыть логотип */
+  }
+
+
+  .contact-info {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .user-header {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .user-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-header-center h1 {
+    font-size: 1.3rem;
+  }
+
+
+  .user-wrapper {
+    padding: 1rem;
+  }
+
+  #perfil-form input,
+  #perfil-form button,
+  .btn-formulario {
+    font-size: 0.9rem;
+    padding: 0.55rem;
+  }
+
+  .botones-contenedor {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .tabla-mascotas {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .tabla-mascotas table {
+    width: 100%;
+    min-width: 600px; /* Чтобы не ломалась таблица при скролле */
+  }
+
+  .tabla-mascotas th,
+  .tabla-mascotas td {
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .historial-lista table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .historial-lista th,
+  .historial-lista td {
+    font-size: 0.85rem;
+  }
+
+  .facturas-lista table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .facturas-lista th,
+  .facturas-lista td {
+    font-size: 0.85rem;
+  }
+
+  .acciones-reseñas-botones {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  .acciones-reseñas-botones li {
+    width: 100%;
+  }
+
+  .btn-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenido-reseña {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .acciones-reseña {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .reseña-registrada {
+    padding: 1rem;
+  }
+
+  .formulario-review input,
+  .formulario-review textarea,
+  .formulario-review select {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .contenedor-boton-centro {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .boton-formulario {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .modo-registro {
+    padding: 1rem;
+  }
+
+  .modo-registro h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .modo-registro-botones {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .modo-registro-botones li {
+    width: 100%;
+  }
+
+  
+  .btn-link {
+  width: 100%;
+  max-width: 100%; /* гарантирует, что не вылезет */
+  box-sizing: border-box;
+  white-space: normal;        /* ✅ разрешает перенос текста */
+  word-wrap: break-word;      /* ✅ если длинное слово — переносит */
+  overflow-wrap: break-word;  /* ✅ на всякий случай для кроссбраузерности */
+  box-sizing: border-box;
+}
+
+}
+
+
+

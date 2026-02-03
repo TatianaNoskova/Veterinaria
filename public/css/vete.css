@@ -1,0 +1,939 @@
+/* Стили для всех заголовков с .empleado-header */
+.empleado-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.empleado-header-left {
+  flex: 0 0 auto;
+}
+
+.empleado-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.vete-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.empleado-header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.empleado-header-center h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.empleado-header-right {
+  flex: 0 0 auto;
+}
+
+.logout {
+  flex: 0 0 auto;
+  background: transparent;
+  color: #0077cc;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  border: none;
+  cursor: pointer; 
+}
+
+/* --- Стиль главной вет.панели --- */
+.vet-dashboard {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Сетка карточек */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Карточка */
+.vet-dashboard .card {
+  display: block;
+  background-color: #bfb0d4;
+  border: 1px solid #9d8db8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #5c4d73;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(224, 177, 208, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(224, 177, 208, 0.2);
+  background-color: #fdf6fa;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.vet-dashboard .card::before,
+.vet-dashboard .card img {
+  display: none !important;
+}
+
+.vet-dashboard .card {
+  color: #4c2a3c !important;
+  text-shadow: none !important;
+  position: static !important;
+}
+
+/* gestion de mascota */
+
+.vet-mascota.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Внешняя рамка только вокруг формы */
+.mascota-wrapper {
+  border: 1px solid #bfb0d4;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Заголовок и форма */
+.mascota-wrapper h2 {
+  margin-top: 0;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+}
+
+#registro-vet-form input,
+#registro-vet-form select,
+#registro-vet-form textarea,
+#registro-vet-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.boton-formulario {
+  display: block;
+  width: 100%;
+  background-color: #bfb0d4;
+  color: white;
+  font-weight: bold;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-formulario:hover {
+  background-color: #a99bc5;
+}
+
+/* Унифицированный стиль для всех селектов */
+select {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+}
+
+/* Boton "Siguiente" — additional */
+.boton-secundario {
+  background-color: #bfb0d4;
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.boton-secundario:hover {
+  background-color: #ccc;
+}
+
+
+/* Отдельный блок таблицы */
+.mascotas-registrados  {
+  border: 1px solid #bfb0d4;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+}
+
+.mascotas-registrados h2 {
+  margin-top: 0;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+}
+
+/* Таблица */
+.tabla-mascotas table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+
+
+.tabla-mascotas th,
+.tabla-mascotas td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #bfb0d4;
+}
+
+.tabla-mascotas th {
+  background-color: #dcd3eb;
+  color: #4c2a3c;
+}
+
+/* Стили для кнопок действия */
+.tabla-mascotas td .action-buttons {
+  display: flex;              /* Включаем флекс-контейнер для кнопок */
+  justify-content: flex-start; /* Расположение кнопок слева */
+  gap: 0.4rem;                /* Отступы между кнопками */
+}
+
+/* Стили для кнопок (сохраняем оригинальные стили) */
+.btn-action {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-action:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  background-color: #f0f0f0;
+}
+
+.btn-delete {
+  background-color: #ffe5e5;
+}
+
+.btn-delete:hover {
+  background-color: #ff6347;
+}
+
+/* Стили для кнопки редактирования, удаления и новой истории */
+.edit-button,
+.delete-button,
+.history-button,
+.new-history-button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.history-button:hover,
+.new-history-button:hover {
+  opacity: 0.8;
+}
+
+/* Контейнер для поиска */
+.busqueda-clientes {
+  margin-bottom: 1.5rem;
+  width: 100%;  /* Делаем его на всю ширину */
+}
+
+.busqueda-clientes label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #4c2a3c;
+}
+
+#buscar-cliente-nuevo,
+#buscar-cliente-tabla, 
+#buscar-cliente-asignado{
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+#buscar-cliente-nuevo:focus,
+#buscar-cliente-tabla:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+
+#buscar-cliente:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+.modo-registro-botones {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.modo-registro-botones li {
+  margin: 0;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #a99bc5;
+  border-radius: 5px;
+  background-color: white;
+  color: #4b3e67;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #a99bc5;
+  color: white;
+  outline: none;
+}
+
+
+/* Общий стиль кнопок действий */
+.btn-action {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-action:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  background-color: #f0f0f0;
+}
+
+/* Стиль для кнопки удаления */
+.btn-delete {
+  background-color: #ffe5e5;
+}
+
+.btn-delete:hover {
+  background-color: #ff6347;
+}
+
+/* Modificar mascota */
+.form-section {
+  border: 1px solid #bfb0d4;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(191, 176, 212, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Заголовок */
+.form-section h2 {
+  margin-top: 0;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+}
+
+/* Стилизация формы */
+#registro-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4c2a3c;
+  font-weight: 500;
+}
+
+.formulario-vet input,
+.formulario-vet select,
+.formulario-vet textarea,
+.formulario-vet button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#registro-form input:focus {
+  border-color: #a99bc5;
+  outline: none;
+}
+
+.btn-cancelar {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #4c2a3c;
+  border: 2px solid #a99bc5;
+  border-radius: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px; 
+}
+
+.btn-cancelar:hover {
+  background-color: #f5a3a9;
+  color: #4c2a3c;
+}
+
+.btn-cancelar:active {
+  background-color: #a99bc5;
+  color: white;
+}
+
+.hidden {
+  visibility: hidden; /* Сохраняет место, но скрывает элемент */
+}
+
+
+/* ------- Nueva consulta médica (registro) ------- */
+
+/* Форма записи новой консультации */
+#nueva-consulta-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4c2a3c;
+}
+
+#nueva-consulta-form input,
+#nueva-consulta-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+#nueva-consulta-form input:focus,
+#nueva-consulta-form textarea:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+/* Кнопка отправки */
+#nueva-consulta-form button[type="submit"] {
+  background-color: #bfb0d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#nueva-consulta-form button[type="submit"]:hover {
+  background-color: #a99bc5;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #3e009c;
+  border: 2px solid #3e009c;
+  border-radius: 25px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* editar consulta */
+
+/* Общие стили для всех форм внутри .form-section */
+.form-section form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4c2a3c;
+}
+
+.form-section form input,
+.form-section form textarea,
+.form-section form select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-section form input:focus,
+.form-section form textarea:focus,
+.form-section form select:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+.campo-estatico {
+  padding: 0.75rem 1rem;
+  background-color: #f8f6fc;
+  border: 1px solid #dcd3eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #4c2a3c;
+  margin-bottom: 1.25rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+
+/* --------- Filtros de historial (formulario de búsqueda) --------- */
+
+#filtro-historial-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #4c2a3c;
+}
+
+#filtro-historial-form input,
+#filtro-historial-form select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+#filtro-historial-form input:focus,
+#filtro-historial-form select:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+/* Кнопка поиска */
+#filtro-historial-form button[type="submit"] {
+  background-color: #bfb0d4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#filtro-historial-form button[type="submit"]:hover {
+  background-color: #a99bc5;
+}
+
+/* --------- Результаты фильтрации: таблица historial --------- */
+
+.tabla-historial {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.tabla-historial th,
+.tabla-historial td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #bfb0d4;
+}
+
+.tabla-historial th {
+  background-color: #dcd3eb;
+  color: #4c2a3c;
+}
+
+.tabla-historial td a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #4c2a3c;
+}
+
+.tabla-historial td a:hover {
+  opacity: 0.8;
+}
+
+/* --- Facturación: búsqueda de cliente y selección de mascota --- */
+
+.input-busqueda-cliente {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  margin-bottom: 1.25rem;
+}
+
+.input-busqueda-cliente:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+.select-mascota {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.select-mascota:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+.input-motivo,
+.textarea-notas {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.input-motivo:focus,
+.textarea-notas:focus {
+  outline: none;
+  border-color: #a99bc5;
+}
+
+.servicios-fieldset {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 колонки */
+    gap: 15px;
+}
+
+.servicio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Отступ между чекбоксом и текстом */
+}
+
+.servicio-item input[type="checkbox"] {
+    transform: scale(1.2);  /* Увеличиваем размер чекбокса для лучшего визуального восприятия */
+}
+
+.nombre-servicio {
+    flex-grow: 1;  /* Название услуги занимает оставшееся место */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.servicio-item {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.servicio-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* -------- Horario --------*/
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  border: 1px solid #bfb0d4;
+  border-radius: 8px;
+  background-color: #faf9fc;
+  box-shadow: 0 1px 4px rgba(191, 176, 212, 0.08);
+}
+
+.schedule-list li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0d7f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #4c2a3c;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+.schedule-list .disponible {
+  font-weight: bold;
+  color: #4c2a3c;
+}
+
+.schedule-list .reservado {
+  color: #a44058;
+  font-style: italic;
+}
+.form-horario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.form-horario .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-horario {
+  background-color: #bfb0d4;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.boton-horario:hover {
+  background-color: #a99bc5;
+}
+
+
+
+
+
+/*-----------Relativo-----------*/
+/* ---------- Планшеты ---------- */
+@media (max-width: 1023px) {
+  .empleado-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .empleado-header-center {
+    text-align: left;
+    width: 100%;
+  }
+
+  .form-section,
+  .mascotas-registrados {
+    padding: 1.5rem;
+  }
+
+  #registro-vet-form input,
+  #registro-vet-form select,
+  #registro-vet-form textarea,
+  #registro-vet-form button,
+  #servicio-vet-form input,
+  #servicio-vet-form select,
+  #servicio-vet-form textarea,
+  #servicio-vet-form button {
+    font-size: 0.95rem;
+  }
+
+  .tabla-mascotas table,
+  .tabla-mascotas th,
+  .tabla-mascotas td {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Мобильные устройства ---------- */
+@media (max-width: 767px) {
+
+ .empleado-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.empleado-header-center {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.logout {
+  width: 100%;
+  text-align: center;
+}
+
+
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    display: none; /* Скрыть логотип */
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .empleado-header {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .vete-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .empleado-header-center h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-section,
+  .mascotas-registrados {
+    padding: 1rem;
+  }
+
+  #registro-vet-form input,
+  #registro-vet-form select,
+  #registro-vet-form textarea,
+  #registro-vet-form button,
+  #servicio-vet-form input,
+  #servicio-vet-form select,
+  #servicio-vet-form textarea,
+  #servicio-vet-form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .tabla-mascotas {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .tabla-mascotas table {
+    width: 100%;
+  }
+
+  .tabla-mascotas th,
+  .tabla-mascotas td {
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .logout {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  .busqueda-clientes {
+    margin-bottom: 1rem;
+  }
+
+  #buscar-cliente {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

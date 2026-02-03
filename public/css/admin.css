@@ -1,0 +1,815 @@
+/* Стили для всех заголовков с .admin-header */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.admin-header-left {
+  flex: 0 0 auto;
+}
+
+.admin-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.admin-header-left {
+  flex: 0 0 auto;
+}
+
+.admin-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.admin-header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.admin-header-center h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+
+.admin-header-right {
+  flex: 0 0 auto;
+}
+
+.logout {
+  flex: 0 0 auto;
+  background: transparent;
+  color: #0077cc;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  border: none;
+  cursor: pointer; 
+  
+}
+
+/* Admin dashboard style */
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Card greed */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.admin-dashboard .card {
+  display: block;
+  background-color: #ffb6c1;;
+  border: 1px solid #e0b1d0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #4c2a3c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(224, 177, 208, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(224, 177, 208, 0.2);
+  background-color: #fdf6fa;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.admin-dashboard .card::before,
+.admin-dashboard .card img {
+  display: none !important;
+}
+
+.admin-dashboard .card {
+  color: #4c2a3c !important;
+  text-shadow: none !important;
+  position: static !important;
+}
+
+
+
+
+
+/* Управление пользователем*/
+/* Контейнер main — без рамки */
+.admin-usuarios-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Внутренние секции — с рамкой */
+.form-section,
+.usuarios-registrados {
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(224, 177, 208, 0.1);
+}
+
+/* Заголовки секций */
+.form-section h2,
+.usuarios-registrados h2 {
+  margin-top: 0;
+  color: #4c2a3c;
+  font-size: 1.4rem;
+}
+
+/* Поля ввода и кнопка в форме */
+#registro-form input,
+#registro-form select,
+#registro-form textarea,
+#registro-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Кнопка */
+#registro-form button {
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#registro-form button:hover {
+  background-color: #ffb6c1;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #ff8fa8;
+}
+
+/* Поисковая строка */
+.busqueda-clientes {
+  margin-bottom: 1.5rem;
+}
+
+.busqueda-clientes input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 4px;
+}
+
+/* Таблица пользователей */
+
+.tabla-usuarios {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.tabla-usuarios table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ffb6c1;
+}
+
+.tabla-usuarios th {
+  background-color: #ffb6c1;
+  color: #4c2a3c;
+}
+
+/* Кнопки действий */
+.edit-button,
+.delete-button {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.faltante {
+  color: #888;
+  font-style: italic;
+}
+
+
+
+/* Общий стиль кнопок действий */
+.btn-action {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-action:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  background-color: #f0f0f0;
+}
+
+/* Стиль для кнопки удаления */
+.btn-delete {
+  background-color: #ffe5e5;
+  
+}
+
+.btn-delete:hover {
+  background-color: #ff6347;
+}
+
+/* Контейнер для страницы управления услугами */
+.container-admin-servicios {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.tabla-usuarios .acciones {
+  white-space: nowrap; /* запрет переноса внутри контейнера кнопок */
+}
+
+.tabla-usuarios .btn-action,
+.tabla-usuarios .acciones form {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* Секции формы и таблицы */
+.container-admin-servicios .form-section,
+.container-admin-servicios .servicios-registrados {
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(224, 177, 208, 0.1);
+}
+
+.container-admin-servicios h2 {
+  color: #4c2a3c;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+/* Форма */
+#servicio-form input,
+#servicio-form select,
+#servicio-form textarea,
+#servicio-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+/* Таблица */
+.tabla-servicios table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-servicios th,
+.tabla-servicios td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ffb6c1;
+}
+
+.tabla-servicios th {
+  background-color: #ffb6c1;
+  color: #4c2a3c;
+}
+
+/* ---------- Reportes / Estadísticas ---------- */
+
+.admin-reportes {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Форма выбора дат */
+.date-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(224, 177, 208, 0.1);
+}
+
+.date-filter-form label {
+  font-weight: bold;
+  color: #4c2a3c;
+}
+
+.date-filter-form input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 4px;
+}
+
+.date-filter-form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffb6c1;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.date-filter-form button:hover {
+  background-color: #ff8fa8;
+}
+
+/* Блоки статистики */
+.stats-block {
+  background-color: #fff;
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(224, 177, 208, 0.1);
+}
+
+.stats-block h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #4c2a3c;
+}
+
+.stats-block ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.stats-block p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Кнопка "Ver facturas" */
+.ver-facturas-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #ffb6c1;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.ver-facturas-btn:hover {
+  background-color: #ff8fa8;
+}
+
+/* Бар-чарты */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bar {
+  background-color: #ffb6c1;
+  color: #4c2a3c;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: var(--width, 100%);
+  max-width: 100%;
+  transition: width 0.3s ease;
+  white-space: nowrap;
+}
+
+#servicio-form button {
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#servicio-form button:hover {
+  background-color: #ff8fa8;
+}
+
+/*---------Turnos---------*/
+.admin-turnos-wrapper h2 {
+  text-align: center;
+  color: #4c2a3c;
+  margin-bottom: 1.5rem;
+}
+
+.horarios-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.horarios-checkboxes label {
+  background-color: #ffd6dd;
+  border: 1px solid #ffb6c1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: block;
+}
+
+.horarios-checkboxes input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+#form-turnos-admin input,
+#form-turnos-admin select,
+#form-turnos-admin button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#form-turnos-admin button {
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#form-turnos-admin button:hover {
+  background-color: #ff8fa8;
+}
+#form-turnos-admin fieldset {
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+#form-turnos-admin legend {
+  font-weight: bold;
+  color: #4c2a3c;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+#form-turnos-admin .botones-contenedor {
+  text-align: center; 
+  margin-top: 1rem;
+}
+
+#form-turnos-admin .boton-formulario {
+  display: inline-block;   
+  padding: 0.75rem 2rem;  
+  font-size: 1rem;
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  max-width: 250px; 
+  width: 100%;      
+  box-sizing: border-box;
+}
+
+#form-turnos-admin .boton-formulario:hover {
+  background-color: #ff8fa8;
+}
+
+.modo-registro {
+  margin: 40px 0;
+}
+
+.modo-registro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.modo-registro-botones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* выравнивание по левому краю */
+  flex-wrap: wrap; /* чтобы не ломалось на узких экранах */
+}
+
+
+
+.btn-link {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #ffb6c1; /* розовая рамка */
+  color: #4c2a3c;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* не переносить текст */
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #ffb6c1;
+  color: #ffffff;
+}
+
+/* Impersonate */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-ingresar {
+    background-color: #FFF5B1;    
+    color: #4F4F4F;
+    /* font-weight: bold; */
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;            
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: #FFE066;     
+}
+
+/* ---------- Планшеты ---------- */
+@media (max-width: 1023px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .admin-header-center {
+    text-align: left;
+    width: 100%;
+  }
+
+  .form-section,
+  .usuarios-registrados,
+  .servicios-registrados {
+    padding: 1.5rem;
+  }
+
+  #registro-form input,
+  #registro-form select,
+  #registro-form textarea,
+  #registro-form button,
+  #servicio-form input,
+  #servicio-form select,
+  #servicio-form textarea,
+  #servicio-form button {
+    font-size: 0.95rem;
+  }
+
+  .tabla-usuarios table,
+  .tabla-usuarios th,
+  .tabla-usuarios td,
+  .tabla-servicios th,
+  .tabla-servicios td {
+    font-size: 0.9rem;
+  }
+
+  .date-filter-form {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .stats-block {
+    padding: 1.25rem;
+  }
+
+  .bar {
+    font-size: 0.95rem;
+  }
+
+  .stats-block h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ---------- Мобильные устройства ---------- */
+@media (max-width: 767px) {
+
+.admin-header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.admin-header-center {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.logout {
+  width: 100%;
+  text-align: center;
+}
+
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    display: none; /* Скрыть логотип */
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .admin-header {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .admin-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .admin-header-center h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-section,
+  .usuarios-registrados,
+  .servicios-registrados {
+    padding: 1rem;
+  }
+
+  #registro-form input,
+  #registro-form select,
+  #registro-form textarea,
+  #registro-form button,
+  #servicio-form input,
+  #servicio-form select,
+  #servicio-form textarea,
+  #servicio-form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .tabla-usuarios table,
+  .tabla-servicios {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .tabla-usuarios th,
+  .tabla-usuarios td,
+  .tabla-servicios th,
+  .tabla-servicios td {
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .logout {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  .date-filter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .date-filter-form label,
+  .date-filter-form input,
+  .date-filter-form button {
+    width: 100%;
+  }
+
+  .bar {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .stats-block h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,112 @@
+/* Стиль для страницы Login и Registro */
+
+/* Общие стили для страниц входа и регистрации */
+main {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-center a {
+    color: #007bff;
+  }
+  
+  .text-center a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стили для ссылок на страницы входа и регистрации */
+  .text-center {
+    margin-top: 20px;
+  }
+  
+  .text-center p {
+    font-size: 1rem;
+  }
+  
+  .text-center p a {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .text-center p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стили для страницы регистрации */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* Карточки и другие элементы на странице */
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+  
+    .logo {
+    display: none; /* Скрыть логотип */
+  }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form-control {
+      padding: 12px;
+    }
+  
+    button[type="submit"] {
+      padding: 12px;
+    }
+
+    footer {
+    display: none;
+  }
+  }
+  

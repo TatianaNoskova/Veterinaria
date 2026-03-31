@@ -14,3 +14,12 @@ El sistema está diseñado para optimizar la organización interna y mejorar la 
 - Gestión de historiales clínicos (enfermedades, recetas, vacunas)
 - Operaciones CRUD completas
 - Estadistica
+
+## Tecnologías utilizadas
+- Backend: Laravel (PHP)
+- Base de datos: MySQL
+- Frontend: Blade / HTML / CSS
+- Arquitectura: MVC
+  
+ ## Instalación y ejecución
+ 1. Clonar el repositorio: 

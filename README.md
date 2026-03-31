@@ -1,6 +1,6 @@
-Sistema de Gestión para Clínica Veterinaria
+# Sistema de Gestión para Clínica Veterinaria
 
-Descripción
+## Descripción
 
 Aplicación web desarrollada para la gestión integral de una clínica veterinaria.
 Permite administrar pacientes, turnos y usuarios con diferentes roles.

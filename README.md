@@ -22,4 +22,15 @@ El sistema está diseñado para optimizar la organización interna y mejorar la 
 - Arquitectura: MVC
   
  ## Instalación y ejecución
- 1. Clonar el repositorio: 
+ 1. Clonar el repositorio: https://github.com/TatianaNoskova/Veterinaria.git
+ 2. Instalar dependencias:composer install
+ 3. Configurar variables de entorno (.env)
+ 4. Ejecutar migraciones: php artisan migrate
+ 5. Iniciar servidor: php artisan serve
+
+## Objetivo del proyecto
+
+Este proyecto fue desarrollado como parte de la formación en Análisis de Sistemas, con foco en el desarrollo de aplicaciones web reales y funcionales.
+
+## Autor:
+Tatiana Noskova
